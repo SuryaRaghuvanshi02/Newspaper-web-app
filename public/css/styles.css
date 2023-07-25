@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: rgb(27, 27, 27);
+    overflow: hidden;
+}
+#page1{
+    min-height:100vh;
+    width: 100vw;
+    background-color: #C4BDB3;
+    position: relative;
+    overflow-x: hidden;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid;
+}
+
+#nav h5{
+    padding-left: 3%;
+    font-family: 'Della Respira', serif;
+    font-size: 1.5rem;
+}
+#nav h4{
+    font-family: 'Della Respira', serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#nav form{
+    padding-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav #searchBar button{
+    margin-left: 20px;
+}
+
+#elems{
+    /* background-color: aliceblue; */
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 3%;
+}
+
+#elem1{
+    width: 35%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#elem2{
+    width: 20%;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 2px solid #acacac;
+    padding: 20px 30px;
+    border-left: 2px solid #acacac;
+    text-align: center;
+    font-family: 'Della Respira', serif;
+}
+#elem3{
+    width: 35%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+#image-div:hover img{
+    scale: 1.1;
+}
+#elem1 #image-div{
+    height:60%;
+    width: 100%;
+    overflow: hidden;
+}
+#elem3 #image-div{
+    height:60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#elem1 h4{
+    font-size: 1.6rem;
+    margin: 20px 0 10px 0;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+#elem1 h4 span{
+    background-color: orangered;
+    color: #C4BDB3;
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding: 4px;
+    border-radius: 10px;
+}
+#elem1 p{
+    font-size: 0.9rem;
+    margin: 20px 0 22px 0;
+    font-family: 'Della Respira', serif;
+    font-weight: 100;
+    color: #505050;
+}
+
+#elem2 h2{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+#elem2 h3{
+    font-size: 2rem;
+    font-weight: 100;
+    color: #444443;
+    margin: 5% 0;
+}
+
+#elem2 h6{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #444443;
+}
+
+#elem3 h4{
+    font-size: 1.6rem;
+    margin: 20px 0 10px 0;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+#elem3 h4 span{
+    background-color: orangered;
+    color: #C4BDB3;
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding: 4px;
+    border-radius: 10px;
+}
+#elem3 p{
+    font-size: 0.9rem;
+    margin: 20px 0 22px 0;
+    font-family: 'Della Respira', serif;
+    font-weight: 100;
+    color: #505050;
+}
+
+#page1 #main-heading h1{
+    font-size: 16.9vw;
+    font-weight: 100;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: #C4BDB3;
+    width: 93%;
+    /* margin: 0 1%; */
+    padding: 1% 1.5%;
+    text-align: center;
+    letter-spacing: -4px;
+}
+
+#page1 #main-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2{
+    height: 150vh;
+    width: 100vw;
+    background-color: #C4BDB3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 30px;
+}
+
+#page2-left{
+    height: 100%;
+    padding-right: 40px;
+    width: 40%;
+    /* background-color: yellow; */
+    border-right : 1px solid #2f2f2f;
+}
+
+#page2-left h2{
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    line-height: 4rem;
+}
+
+#page2-left img{
+    height: 50%;
+    width: 100%;
+    object-fit:contain;
+}
+
+#page2-left p{
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2f2f2f;
+    /* margin-top: 20px; */
+}
+
+#page2-right{
+    height: 100%;
+    width: 70%;
+    padding: 0 60px;
+}
+#page2-right img{
+    height: 53%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#page2-right h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+#page3{
+    height: 50vh;
+    position: relative;
+    background-color: #C4BDB3;
+}
+#page3 h1{
+    font-size: 25rem;
+    font-weight: 100;
+    letter-spacing: -10px;
+    background-color: #1c1c1c;
+    color: #C4BDB3;
+    font-family: 'Times New Roman', Times, serif;
+    width: fit-content;
+    padding: 0 20px;
+    line-height: 400px;
+    margin-left: 2%;
+}
+
+#page3 img{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+#page4-left{
+    border-right: 2px solid #2f2f2f;
+}
+
+#page4-left #page4-left-up{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+#page4-left-left{
+    width: 50%;
+    height: 100%;
+    border-right: 2px solid #2f2f2f;
+    padding: 20px 30px;
+    text-align: center;
+    font-family: 'Della Respira', serif;
+}
+
+#page4-left-left h2{
+    font-size: 2.2rem;
+    font-weight: 100;
+}
+
+#page4-left-left h3{
+    font-size: 1.9rem;
+    font-weight: 100;
+    color: #444443;
+    margin: 3% 0;
+}
+
+#page4-left-left h6{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #444443;
+}
+
+#page4-left-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    padding: 2%;
+}
+
+#page4-left-right h4{
+    font-size: 1.8rem;
+    margin: 20px 0 10px 0;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+#page4-left-right p{
+    font-size: 1rem;
+    margin: 20px 0 22px 0;
+    font-family: 'Della Respira', serif;
+    font-weight: 100;
+    color: #505050;
+}
+
+
+#page4-left-right #image-div-left-right img{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C4BDB3;
+}
+
+#page4-left{
+    width: 65%;
+    height: 100%;
+    padding: 0px 60px 80px 60px;
+}
+#page4-left #page4-left-down img{
+    height: 500px;
+    width: 1000px;
+    object-fit: cover;
+}
+#page4-right{
+    width: 35%;
+    height: 100%;
+    padding: 0px 60px 80px 60px;
+}
+
+#page4-right h1{
+    font-size: 3rem;
+    margin: 20px 0 10px 0;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-weight: bolder;
+}
+
+#page4-right p{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: #2f2f2f;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+#page4-right #circle-button{
+    height: 250px;
+    width: 100%;
+    background-color: #CAC1B6;
+    border: 1px solid #2f2f2faf;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#circle-button h1{
+    font-size: 7rem;
+    color: #1c1c1c;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-28%);
+    transition: all ease 0.6s;
+}
+
+#circle-button img{
+    height: 60px;
+    transform: translateX(-120%);
+    transition: all ease 0.6s;
+}
+
+#circle-button:hover img{
+    transform: translateX(85%);
+}
+
+#circle-button:hover h1{
+    transform: translateX(140%);
+}
+
+#space-page{
+    height: 30px;
+    background-color: #C4BDB3;
+}
+
+#page5{
+    padding: 25px 0;
+    width: 100%;
+    background-color: #C4BDB3;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+#page5::-webkit-scrollbar{
+    display: none;
+}
+
+#page5 h1{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 20px;
+    animation-timing-function: linear;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#page5 h1 span{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    background-color: #2f2f2f;
+    color: #C4BDB3;
+}
+#page6{
+    height: 100px;
+    background-color: #C4BDB3;
+    padding-top: 20px;
+}
+
+
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+
+#page5:hover h1{
+    animation-play-state: paused;
+}
